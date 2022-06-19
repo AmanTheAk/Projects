@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans&family=Kanit:wght@300&family=Lato&family=Nunito&family=PT+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+    <title>CodoHack - Hacking & Hacking</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="/img/logo.jpeg" alt="">
+                <span style="color: red;">Codo</span><span>Hack</span>
+            </div>
+            <div id="pages">
+                <a class="page" href="index.html">Home</a>
+                <a class="page" href="coding.html">Coding</a>
+                <a class="page" href="hacking.html">Hacking</a>
+                <a class="page" href="services.html">Services</a>
+                <a class="page" href="about.html">About</a>
+            </div>
+            <div id="search">
+                <input type="text" name="" id="searchInp" placeholder="search...">
+            </div>
+        </nav>
+        <div id="mid">
+            <div id="someline">
+                <h1>CodoHack - Coding & Hacking</h1>
+                <p>Get content and services related to coding & hacking.</p>
+                <a href="about.html"><button>Contact Us</button></a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h1>Learn Coding</h1>
+        <div id="midsec">
+            <ul id="listspace">
+                <h3>One Shot</h3>
+                <!-- <button id="ptn" onclick="showhide()">Python</button> -->
+                <li onclick="showhide('py')" class="malist">Python</li>
+                <li onclick="showhide('cpp')" class="malist">C++</li>
+                <li onclick="showhide('js')" class="malist">JavaScript</li>
+                <li onclick="showhide('html')" class="malist">HTML</li>
+                <li onclick="showhide('css')" class="malist">CSS</li>
+                <br>
+                <h3>Related post</h3>
+                <li onclick="showhide('web')" class="malist">Web-Development</li>
+                <li onclick="showhide('andro')" class="malist">Android-Development</li>
+                <li onclick="showhide('game')" class="malist">Game-Development</li>
+                <li onclick="showhide('app')" class="malist">App-Development</li>
+            </ul>
+            <div id="allpara">
+                <p id="py">PYTHON Lorem ipsum dolor</p>
+                <p id="cpp">C++ Lorem ipsum dolor </p>
+                <p id="js">JAVASCRIPT Lorem ipsum</p>
+                <p id="html">HTML Lorem ipsum dolor</p>
+                <p id="css">CSS Lorem ipsum dolor</p>
+
+                <p id="web">WEB Lorem ipsum dolor</p>
+                <p id="andro">ANDROID Lorem ipsum dolor</p>
+                <p id="game">GAME Lorem ipsum dolor</p>
+                <p id="app">APP Lorem ipsum dolor</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <samp>&copy CodoHack 2022</samp>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
