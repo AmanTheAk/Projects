@@ -14,38 +14,74 @@
 
 <body>
     <header>
-        <nav>
-            <div id="logo">
-                <img src="/img/logo.jpeg" alt="">
-                <span style="color: red;">Codo</span><span>Hack</span>
+        <nav id="navBar">
+            <img id="logo" src="/img/logo.png" alt="">
+
+            <div id="pageLinks">
+                <a class="pageLink" href="index.html">Home</a>
+                <a class="pageLink" href="coding.html">Coding</a>
+                <a class="pageLink" href="hacking.html">Hacking</a>
+                <a class="pageLink" href="services.html">Services</a>
+                <a class="pageLink" href="about.html">About</a>
             </div>
-            <div id="pages">
-                <a class="page" href="index.html">Home</a>
-                <a class="page" href="coding.html">Coding</a>
-                <a class="page" href="hacking.html">Hacking</a>
-                <a class="page" href="services.html">Services</a>
-                <a class="page" href="about.html">About</a>
+
+            <div id="lsBtns">
+                <a href="" ><button class="lsBtn">Signup</button></a>
+                <a href=""><button class="lsBtn">Login</button></a>
             </div>
-            <div id="search">
-                <input type="text" name="" id="searchInp" placeholder="search...">
+            
+            <div class="menu" onclick="navShow()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <div id="menu2" class="menu" onclick="navShow()">
+                <span id="l1" class="line2"></span>
+                <span id="l2" class="line2"></span>
             </div>
         </nav>
-        <div id="mid">
-            <div id="someline">
-                <h1>CodoHack - Coding & Hacking</h1>
-                <p>Get content and services related to coding & hacking.</p>
-                <a href="about.html"><button>Contact Us</button></a>
+        
+        
+        <div id="siteBio">
+            <h1>CodoHack - Coding & Hacking</h1>
+            <p>Get content and services related to coding & hacking.</p>
+            <div>
+                <a href="about.html"><button class="bioBtn">Start Learning</button></a>
+                <a href="about.html"><button class="bioBtn">Get Services</button></a>
+            </div>
+            <div id="mysearch">
+                <input type="text" name="" id="searchInp" placeholder="search...">
+                <a href=""><button id="searchBtn">Search</button></a>
             </div>
         </div>
     </header>
 
     <section>
         <h1>About Us & Contact Us</h1>
+        <div id="abtc">
+            <div class="abt">
+                <img class="myimg" src="/img/appDev.png" alt="">
+                <div class="abtBio">
+                    <h2>Ram</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore odit ut, beatae ea similique autem est illo quod cumque! Vitae voluptatem quis odio quas odit suscipit laboriosam. Vitae, reiciendis dolore.</p>
+                </div>
+            </div>
+            <div class="abt">
+                <img class="myimg" src="/img/appDev.png" alt="">
+                <div class="abtBio">
+                    <h2>Shyam</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore odit ut, beatae ea similique autem est illo quod cumque! Vitae voluptatem quis odio quas odit suscipit laboriosam. Vitae, reiciendis dolore.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
         <samp>&copy CodoHack 2022</samp>
     </footer>
+
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

@@ -14,60 +14,130 @@
 
 <body>
     <header>
-        <nav>
-            <div id="logo">
-                <img src="/img/logo.jpeg" alt="">
-                <span style="color: red;">Codo</span><span>Hack</span>
+        <nav id="navBar">
+            <img id="logo" src="/img/logo.png" alt="">
+
+            <div id="pageLinks">
+                <a class="pageLink" href="index.html">Home</a>
+                <a class="pageLink" href="coding.html">Coding</a>
+                <a class="pageLink" href="hacking.html">Hacking</a>
+                <a class="pageLink" href="services.html">Services</a>
+                <a class="pageLink" href="about.html">About</a>
             </div>
-            <div id="pages">
-                <a class="page" href="index.html">Home</a>
-                <a class="page" href="coding.html">Coding</a>
-                <a class="page" href="hacking.html">Hacking</a>
-                <a class="page" href="services.html">Services</a>
-                <a class="page" href="about.html">About</a>
+
+            <div id="lsBtns">
+                <a href="" ><button class="lsBtn">Signup</button></a>
+                <a href=""><button class="lsBtn">Login</button></a>
             </div>
-            <div id="search">
-                <input type="text" name="" id="searchInp" placeholder="search...">
+            
+            <div class="menu" onclick="navShow()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <div id="menu2" class="menu" onclick="navShow()">
+                <span id="l1" class="line2"></span>
+                <span id="l2" class="line2"></span>
             </div>
         </nav>
-        <div id="mid">
-            <div id="someline">
-                <h1>CodoHack - Coding & Hacking</h1>
-                <p>Get content and services related to coding & hacking.</p>
-                <a href="about.html"><button>Contact Us</button></a>
+        
+        
+        <div id="siteBio">
+            <h1>CodoHack - Coding & Hacking</h1>
+            <p>Get content and services related to coding & hacking.</p>
+            <div>
+                <a href="about.html"><button class="bioBtn">Start Learning</button></a>
+                <a href="about.html"><button class="bioBtn">Get Services</button></a>
+            </div>
+            <div id="mysearch">
+                <input type="text" name="" id="searchInp" placeholder="search...">
+                <a href=""><button id="searchBtn">Search</button></a>
             </div>
         </div>
     </header>
 
+
     <section>
         <h1>Learn Coding</h1>
-        <div id="midsec">
+        <div id="midSec">
+            <div id="slide">
+                <span id="mymenu1" class="mymenu" onclick="slideShow()">&lt;</span>
+                <span id="mymenu2" class="mymenu" onclick="slideShow()">&gt;</span>
+            </div>
+            
             <ul id="listspace">
-                <h3>One Shot</h3>
-                <!-- <button id="ptn" onclick="showhide()">Python</button> -->
+                <li class="myhe">
+                    <h3>One Shot</h3>
+                </li>
                 <li onclick="showhide('py')" class="malist">Python</li>
                 <li onclick="showhide('cpp')" class="malist">C++</li>
                 <li onclick="showhide('js')" class="malist">JavaScript</li>
                 <li onclick="showhide('html')" class="malist">HTML</li>
                 <li onclick="showhide('css')" class="malist">CSS</li>
-                <br>
-                <h3>Related post</h3>
+                <li class="myhe">
+                    <h3>Related post</h3>
+                </li>
                 <li onclick="showhide('web')" class="malist">Web-Development</li>
                 <li onclick="showhide('andro')" class="malist">Android-Development</li>
                 <li onclick="showhide('game')" class="malist">Game-Development</li>
                 <li onclick="showhide('app')" class="malist">App-Development</li>
             </ul>
-            <div id="allpara">
-                <p id="py">PYTHON Lorem ipsum dolor</p>
-                <p id="cpp">C++ Lorem ipsum dolor </p>
-                <p id="js">JAVASCRIPT Lorem ipsum</p>
-                <p id="html">HTML Lorem ipsum dolor</p>
-                <p id="css">CSS Lorem ipsum dolor</p>
 
-                <p id="web">WEB Lorem ipsum dolor</p>
-                <p id="andro">ANDROID Lorem ipsum dolor</p>
-                <p id="game">GAME Lorem ipsum dolor</p>
-                <p id="app">APP Lorem ipsum dolor</p>
+            <div id="allpara">
+                <p class="para" id="py">PYTHON Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Deleniti officiis tempora obcaecati, sint consequuntur esse, illum quo suscipit culpa, a
+                    dignissimos nobis soluta. Possimus nulla quisquam corrupti, maiores sed a eligendi perspiciatis
+                    voluptate minima inventore laboriosam praesentium itaque incidunt, numquam eum, aliquam natus nemo.
+                    Alias pariatur laborum eos explicabo molestias consectetur atque vel aspernatur perspiciatis odit
+                    laboriosam debitis excepturi, quibusdam harum? Animi ducimus eligendi modi minus tempore numquam
+                    omnis quo? In molestias et, eos quos quas id ea quis? Culpa recusandae, nulla fugit nam rem
+                    praesentium veritatis aliquam, tempora sunt minus itaque id sed quae obcaecati placeat possimus,
+                    facilis iusto blanditiis quos enim dignissimos accusantium laborum! Voluptates inventore, itaque,
+                    aliquid cupiditate a deserunt laboriosam nam temporibus nesciunt, odio velit necessitatibus aliquam
+                    dolores aspernatur doloribus quas? Recusandae, nobis possimus. Culpa maiores, quam excepturi
+                    reprehenderit minus sapiente atque placeat veniam necessitatibus aliquid eligendi, inventore magnam
+                    vel velit facere numquam est illum! Ipsum minus vero, architecto tenetur molestiae corrupti dicta
+                    minima ut animi deserunt quas vel, nulla praesentium corporis. Distinctio repudiandae, modi non,
+                    iusto reiciendis sint, atque sunt obcaecati amet ullam accusamus possimus aliquam minima ipsa
+                    corporis repellat libero illo dolorum rerum consequuntur id! Accusamus accusantium quis quasi animi
+                    ratione laboriosam, impedit itaque, fuga aliquid vel numquam corrupti id! Aut architecto nam
+                    mollitia omnis totam ipsum tenetur! Consequatur dignissimos, dolorem aliquam consectetur quidem
+                    maxime, molestiae sequi eligendi, pariatur rem cupiditate hic id. Unde deleniti illo odit? Atque
+                    aspernatur corporis alias enim eligendi consectetur eius dolor temporibus eum fugit impedit, quia
+                    explicabo deleniti corrupti aliquid cum omnis ipsum perferendis pariatur quae tempore, eveniet qui
+                    incidunt. Laborum dolores modi, cupiditate porro, iste sequi quod sed quibusdam a amet debitis saepe
+                    temporibus, aperiam perspiciatis vel quaerat itaque quas. Ex eveniet possimus laborum molestias,
+                    repellendus eligendi illo, animi assumenda nam soluta, culpa fugit. Nobis vero error itaque
+                    necessitatibus mollitia dicta labore amet possimus dolores, cumque voluptate blanditiis cupiditate
+                    nulla culpa quis ullam minima, atque maiores voluptates fugiat. Nisi reprehenderit, sapiente
+                    recusandae, esse, quisquam eveniet delectus non consectetur obcaecati molestias saepe quis soluta
+                    cumque et ea ducimus mollitia provident unde dicta rerum? Impedit voluptates porro odio alias earum
+                    cupiditate ipsa dolorum vero provident voluptatum fugiat eaque dicta aspernatur tempora quidem,
+                    delectus dolore deleniti, minima quae non ex similique fugit? Quidem, obcaecati, non atque illo,
+                    totam dignissimos deserunt sunt et eius mollitia dolore voluptatibus rerum? Illum impedit quasi
+                    nihil neque atque saepe architecto aliquid! Iste dignissimos saepe fugit? Eos suscipit repudiandae
+                    placeat asperiores, nobis fugit quod veniam autem recusandae expedita debitis laudantium harum
+                    dolorem voluptatem iste modi quis adipisci facere commodi nisi delectus accusantium earum dicta.
+                    Adipisci doloremque alias eius assumenda totam? Quo officiis animi quia sed vero? Esse recusandae
+                    consequatur ex, eveniet soluta deleniti, est repellendus facilis excepturi veritatis laboriosam eum
+                    suscipit ipsum ullam expedita ab doloribus atque assumenda, enim autem fugiat consequuntur?
+                    Recusandae esse itaque possimus laborum accusamus sed quibusdam perspiciatis dolore maiores cum
+                    quisquam omnis temporibus, numquam vel sint sunt consectetur atque. Porro ipsam quos quis vitae non
+                    quasi natus illum voluptatem consequuntur eligendi laboriosam ullam provident nostrum delectus esse
+                    facilis quam, debitis molestias, nihil suscipit reiciendis, nesciunt officiis? Minus molestiae
+                    consectetur rem dolores nemo non, nobis ea dicta possimus, totam aliquam magni autem beatae odio,
+                    harum illum. Fuga dolorem a qui doloribus vero saepe, temporibus tenetur at, unde officia iste ullam
+                    neque accusamus quaerat veritatis ea ut fugiat officiis debitis.</p>
+                <p class="para" id="cpp">C++ Lorem ipsum dolor </p>
+                <p class="para" id="js">JAVASCRIPT Lorem ipsum</p>
+                <p class="para" id="html">HTML Lorem ipsum dolor</p>
+                <p class="para" id="css">CSS Lorem ipsum dolor</p>
+
+                <p class="para" id="web">WEB Lorem ipsum dolor</p>
+                <p class="para" id="andro">ANDROID Lorem ipsum dolor</p>
+                <p class="para" id="game">GAME Lorem ipsum dolor</p>
+                <p class="para" id="app">APP Lorem ipsum dolor</p>
             </div>
         </div>
     </section>
